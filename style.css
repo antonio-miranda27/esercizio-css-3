@@ -1,10 +1,11 @@
 p{font-family: "Roboto Condensed", sans-serif;
-  color: gray;
+  color: black;
   margin: 3px;}
 
-nav{background-color: rgb(238, 55, 55);
+nav{background-color: rgb(18, 76, 18);
     display: flex;
-   justify-content: space-between;}
+    align-items: center;
+    justify-content: space-around;}
 
 .logoaulab{width: 150px;height: 150px;}
 
@@ -15,7 +16,7 @@ nav{background-color: rgb(238, 55, 55);
 .linea{text-decoration: none;
        color: black;
        font-size: 25px;
-       margin-right: 40px;}
+       margin-right: 20px;}
 
 .linea:hover{border-bottom: 3px solid black;}
 
@@ -36,10 +37,12 @@ h2{color: red;
    height: top 80px;}
    
 h3{color: red;
+   background-color: black;
    text-align: center;
    font-size: 25px;}
 
 h4{color: red;
+   background-color: black;
    font-family: 'oswald',sans-serif;
    font-size: 25px;}
 
@@ -53,7 +56,7 @@ h4{color: red;
 .blink:hover{background-color: red;
              color: black;}
 
-.art{background-color: white;}
+.art{background-color: rgb(58, 123, 58)}
 
 .imgnegozio{width: 100%;
             height: 200px;}
@@ -61,63 +64,60 @@ h4{color: red;
 .negozio{display: flex;
          width: 60%;}
 
-body{background-color:white;}
+body{background-color:rgb(106, 182, 106);
+     margin: 0px;}
         
 
-aside{background-color: white;
+aside{background-color: rgb(106, 182, 106);
    width: 40%;}
    
 main{display: flex;}
 
-.torna{height: 50px;
-      position: relative;
-      left: 1300px;}
+footer{display: flex;
+       justify-content: space-around;
+       align-items: center;
+       background-color: rgb(18, 76, 18);
+       height: 30vh;
+       margin-top: 30px;}
 
-.torna:hover{animation:shake 0.5;
-            animation-iteration-count: infinite; }
+.torna{width: 50px;
+       height: 50px;
+       animation-name: icon;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+       position: fixed;
+       top: 80vh;}
 
-@media screen and (max-width: 600px){
-
-   p{height: 75vh;
-      font-size: 17px;
-      margin-bottom: 0%;
-      margin-top: 0%;}
-
-   h1{font-size: 70px;}
-
-   h4{font-size: 20px;
-      border-top: 0px;}
-
-   article{width: 100%;}
-
-   .negozio{flex-direction: column;
-            width: 40vh;}
-
-   .imgnegozio{width: 100%;}
-
-   .logoaulab{width: 100px;
-              height: 80px;}
-
-   .linea{font-size: 20px;
-          margin-right: 5px;}
-
-   .linklista{display: inline;
-              margin-right: 100px;}
-
-   header{width: 100%;}
-
-   body{margin: 0%;}
-
-   aside{width: 20vh;}
-
-   .data{font-size: 20px;
-         height: 30px;}
-
-   .torna{height: 50px;
-      position: relative;
-      left: 500px;}
-
+@keyframes icon {
+   0%{ transform: translateY(30px);}
+   100%{transform: translateX(0px);}
 }
+
+@media screen and (max-width: 670px){
+
+   nav{display: block;}
+
+   .logoaulab{width: 110px;
+              height: 50px;}
+
+   .linea{font-size: 15px;}
+
+   .negozio{display: block;
+            width: 100%;
+            margin: 50px 0px;}
+
+   aside{display: block;
+         width: 100%;}
+
+   main{display: block;}
+
+   footer{display: block;}
+
+   .torna{margin-left: 90%;
+          height: 30px;
+          width: 30px;}
+
+   }
    
 
 
